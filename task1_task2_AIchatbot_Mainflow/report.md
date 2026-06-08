@@ -1,0 +1,4 @@
+Which approach worked better — Rule-Based or NLP?
+The NLP-enhanced chatbot performed significantly better than the rule-based chatbot. The rule-based chatbot worked well for exact keyword matches but failed when users rephrased their questions differently. For example, if a user typed "what is the scholarship amount" instead of "what are the fees", the rule-based bot could not match it correctly.
+The NLP chatbot using TF-IDF vectorization and cosine similarity handled such cases easily. It understood the intent behind the message even with completely new phrasings. The Logistic Regression classifier further improved accuracy by learning patterns from training data.
+However, the rule-based system was faster and more predictable for simple straightforward queries. That is why a hybrid approach works best — use NLP for intent detection first and fall back to rule-based matching when confidence is low. This is exactly what we implemented in Task 2.
